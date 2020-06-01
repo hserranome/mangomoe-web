@@ -41,10 +41,8 @@ body{
 	color: #82858f;
 }
 
-.labs span{
-	color: #f3973d;
+span.tag{
 	text-transform: uppercase;
-    border: 1px solid #f3973d;
     font-size: 14px;
     font-weight: 600;
     padding: 4px 8px;
@@ -52,12 +50,24 @@ body{
     display: inline-block;
     margin-bottom: 35px;
 }
+.faq span.tag{
+	color: #e43df3;
+    border: 1px solid #e43df3;
+}
+.labs span.tag{
+	color: #3d77f3;
+    border: 1px solid #3d77f3;
+}
+.projects span.tag{
+	color: #f3973d;
+    border: 1px solid #f3973d;
+}
 
 .item{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: center;
 	margin-bottom: 2rem;
 }
 .item .img{
@@ -73,6 +83,9 @@ body{
 }
 .item .img.trabajos{ background-color: #ff4114; }
 .item .img.cultura{ background-color: #334459; }
+.item .img.games{ background-color: #eb3030; }
+.item .img.adult{ background-color: #242424; }
+.item .img.tier{ background-color: #90A2F8; }
 .item .img.draw{ background-color: #90A2F8; }
 .item .img.inspiration{ background-color: #2e4de4; }
 .item .img img{
@@ -87,6 +100,14 @@ body{
 .item p a{
 	color: #292a30;
 	text-decoration: none;
+}
+
+.faq .item{
+	flex-flow: column wrap;
+	align-items: flex-start;
+}
+.faq .item p{
+	margin-bottom: .5rem;
 }
 
 /* Tablets */
