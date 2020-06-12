@@ -23,4 +23,4 @@ jobs:
         command: cd /www/static/mango.moe; git pull;
         host: ${{ secrets.HOST }}
         username: root
-        password: ${{ secrets.NEWPASSWORD }}
+        password: ${{ secrets.PASSWORD }}
