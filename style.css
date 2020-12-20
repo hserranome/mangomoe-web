@@ -79,11 +79,11 @@ canvas {
 	font-weight: 700;
 }
 
-/* OLD */
-.old-content {
+/* Content */
+.content {
 	padding-top: 280px
 }
-.old-container {
+.section {
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
@@ -92,29 +92,52 @@ canvas {
 	margin-bottom: 2rem;
 	padding-bottom: 3rem;
 }
-.old-container:last-child{
+.section:last-child{
 	border-bottom: none;
 }
+
+/* Presentation */
+.presentation h4 {
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 14px;
+	color: #292a30;
+}
+.presentation p {
+	font-size: 18px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+/* Tag */
 span.tag{
 	text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 4px 8px;
-    border-radius: 6px;
-    display: inline-block;
-    margin-bottom: 35px;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 4px 8px;
+	border-radius: 6px;
+	display: inline-block;
+	margin-bottom: 35px;
 }
-.faq span.tag{
-	color: #3d77f3;
-	border: 1px solid #3d77f3;
-}
-.labs span.tag{
+
+/* Projects */
+.projects span.tag{
 	color: #e43df3;
 	border: 1px solid #e43df3;
 }
-.projects span.tag{
-	color: #f3973d;
-    border: 1px solid #f3973d;
+
+.item:last-child{
+	margin-bottom: 0;
+}
+.item p{
+	font-size: 18px;
+}
+.item .title{
+	color: #292a30;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 .item{
@@ -124,6 +147,7 @@ span.tag{
 	align-items: center;
 	margin-bottom: 2rem;
 }
+
 .item .img{
 	min-width: 50px !important;
 	width: 50px;
@@ -138,6 +162,8 @@ span.tag{
 	margin-right: 24px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px
 }
+
+/* Project Colors */
 .item .img.trabajos{ background-color: #ff4114; }
 .item .img.cultura{ background-color: #334459; }
 .item .img.games{ background-color: #eb3030; }
@@ -148,23 +174,5 @@ span.tag{
 .item .img img{
 	width: 25px;
 }
-.item:last-child{
-	margin-bottom: 0;
-}
-.item p{
-	font-size: 18px;
-}
-.item .title{
-	color: #292a30;
-	font-weight: 700;
-	text-decoration: none;
-}
 
-.faq .item{
-	flex-flow: column wrap;
-	align-items: flex-start;
-}
-.faq .item p{
-	margin-bottom: .5rem;
-}
 
