@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;700&display=swap');
 
+/* Variables */
+:root {
+  --tablet-width: 768px;
+  --desktop-width: 992px;
+}
+
+/* General */
 body > *, html > *, *
 {
 	box-sizing: border-box;
 	margin: 0; padding: 0;
 	top: 0; left: 0;
-    font-weight: 600;
+	font-weight: 400;
 	font-size: 100%;
 	font-family: 'Montserrat', sans-serif;
-	color: #82858f;
-    margin: 0;
+	color: #03103a;
+	margin: 0;
 }
 body{
-	/* background-color: #FAFAFF; */
-	background-color: #fff;
+	background-color: #ffce08;
+}
+
+::selection{
+	background-color: rgba(0, 0, 0, .7);
+	color: white;
 }
 
 /* Container */
@@ -25,8 +36,17 @@ body{
 }
 
 /* Hero */
+canvas {
+	outline: none;
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .hero {
-	padding-top: 420px;
+	padding-top: 350px;
 	text-align: center;
 }
 .hero img {
@@ -46,28 +66,17 @@ body{
 	letter-spacing: -7px;
 }
 
-/* Tablets */
-@media only screen and (min-width : 768px)
-{
+/* Footer */
+.footer {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-{
+.footer .contact {
+	margin-bottom: 12px;
 }
-
-::selection{
-	background-color: rgba(0, 0, 0, .7);
-	color: white;
-}
-
-canvas {
-	outline: none;
-	position: absolute;
-	z-index: -1;
-	top: 80px;
-	left: 50%;
-	transform: translateX(-50%);
+.footer p {
+	font-weight: 700;
 }
 
 /* OLD */
@@ -80,7 +89,6 @@ canvas {
 	margin: 0 auto;
 	padding: 1rem;
 	text-align: left;
-	border-bottom: 1px solid #e7e9ee;
 	margin-bottom: 2rem;
 	padding-bottom: 3rem;
 }
@@ -90,19 +98,19 @@ canvas {
 span.tag{
 	text-transform: uppercase;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 4px 8px;
     border-radius: 6px;
     display: inline-block;
     margin-bottom: 35px;
 }
 .faq span.tag{
-	color: #e43df3;
-    border: 1px solid #e43df3;
+	color: #3d77f3;
+	border: 1px solid #3d77f3;
 }
 .labs span.tag{
-	color: #3d77f3;
-    border: 1px solid #3d77f3;
+	color: #e43df3;
+	border: 1px solid #e43df3;
 }
 .projects span.tag{
 	color: #f3973d;
@@ -126,6 +134,9 @@ span.tag{
 	border-radius: 8px;
 	background-color: #82858f;
 	margin-right: 24px;
+	border: 2px solid white;
+	margin-right: 24px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px
 }
 .item .img.trabajos{ background-color: #ff4114; }
 .item .img.cultura{ background-color: #334459; }
@@ -143,8 +154,9 @@ span.tag{
 .item p{
 	font-size: 18px;
 }
-.item p a{
+.item .title{
 	color: #292a30;
+	font-weight: 700;
 	text-decoration: none;
 }
 
