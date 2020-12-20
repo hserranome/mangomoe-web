@@ -36,19 +36,25 @@ body{
 }
 
 /* Hero */
-canvas {
+.canvas-container {
 	outline: none;
 	position: absolute;
+	overflow: hidden;
 	z-index: -1;
 	top: 0px;
+	max-width: 100vw;
 	left: 50%;
 	transform: translateX(-50%);
+	margin-top: -60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 .hero {
-	padding-top: 350px;
+	padding-top: 300px;
 	text-align: center;
 }
+
 .hero img {
 	width: 90px;
 	opacity: 0.8;
